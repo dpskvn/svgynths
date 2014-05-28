@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="150px" height="113px" viewBox="0 0 150 113" version="1.1" id="miniMoog">
+  <title>Minimoog</title>
+  <description>Interactive icon by @dpskvn</description>
+  <defs>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="genericShadow">
+      <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetInner1" result="shadowBlurInner1"/>
+      <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="shadowMatrixInner1"/>
+      </feMerge>
+    </filter>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="98.9317602%" id="wheelGradient">
+      <stop stop-color="#9A9A9A" offset="0%"/>
+      <stop stop-color="#C3C3C3" offset="50%"/>
+      <stop stop-color="#9A9A9A" offset="100%"/>
+    </linearGradient>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="whiteKeyShadow">
+      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="blackKeyShadow">
+      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.197119473   0 0 0 0 0.197119473   0 0 0 0 0.197119473  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="doubleShadow">
+      <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+      <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter2" type="matrix" result="shadowMatrixOuter2"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="coverGradient">
+      <stop stop-color="#8A5630" offset="0%"/>
+      <stop stop-color="#603B1F" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="sideGradient">
+      <stop stop-color="#8A5630" offset="0%"/>
+      <stop stop-color="#7A4C2A" offset="49.86647%"/>
+      <stop stop-color="#613C21" offset="50.4982462%"/>
+      <stop stop-color="#5B381F" offset="100%"/>
+    </linearGradient>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="rightShadow">
+      <feOffset dx="1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="leftShadow">
+      <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect id="body" stroke="#8A6549" fill="#8A5630" x="0" y="0" width="150" height="107"/>
+  <rect id="sidePanel" fill="#3B3C3B" filter="url(#genericShadow)" x="4" y="75" width="22" height="31"/>
+  <g id="Keys" transform="translate(26.000000, 71.000000)">
+    <g id="White-Keys" transform="translate(0.000000, 5.000000)" fill="#FAFAFA">
+      <rect id="f" filter="url(#whiteKeyShadow)" x="0" y="0" width="8" height="29" rx="2"/>
+      <rect id="g" filter="url(#whiteKeyShadow)" x="10" y="0" width="8" height="29" rx="2"/>
+      <rect id="a" filter="url(#whiteKeyShadow)" x="20" y="0" width="8" height="29" rx="2"/>
+      <rect id="b" filter="url(#whiteKeyShadow)" x="30" y="0" width="8" height="29" rx="2"/>
+      <rect id="c" filter="url(#whiteKeyShadow)" x="40" y="0" width="8" height="29" rx="2"/>
+      <rect id="d" filter="url(#whiteKeyShadow)" x="50" y="0" width="8" height="29" rx="2"/>
+      <rect id="e" filter="url(#whiteKeyShadow)" x="60" y="0" width="8" height="29" rx="2"/>
+      <rect id="f2" filter="url(#whiteKeyShadow)" x="70" y="0" width="8" height="29" rx="2"/>
+      <rect id="g2" filter="url(#whiteKeyShadow)" x="80" y="0" width="8" height="29" rx="2"/>
+      <rect id="a2" filter="url(#whiteKeyShadow)" x="90" y="0" width="8" height="29" rx="2"/>
+      <rect id="b2" filter="url(#whiteKeyShadow)" x="100" y="0" width="8" height="29" rx="2"/>
+      <rect id="c2" filter="url(#whiteKeyShadow)" x="110" y="0" width="8" height="29" rx="2"/>
+    </g>
+    <g id="Black-Keys" transform="translate(6.000000, 0.000000)" fill="#565656">
+      <rect id="fs" filter="url(#blackKeyShadow)" x="0" y="0" width="6" height="21" rx="2"/>
+      <rect id="gs" filter="url(#blackKeyShadow)" x="10" y="0" width="6" height="21" rx="2"/>
+      <rect id="as" filter="url(#blackKeyShadow)" x="20" y="0" width="6" height="21" rx="2"/>
+      <rect id="cs" filter="url(#blackKeyShadow)" x="40" y="0" width="6" height="21" rx="2"/>
+      <rect id="ds" filter="url(#blackKeyShadow)" x="50" y="0" width="6" height="21" rx="2"/>
+      <rect id="fs2" filter="url(#blackKeyShadow)" x="70" y="0" width="6" height="21" rx="2"/>
+      <rect id="gs2" filter="url(#blackKeyShadow)" x="80" y="0" width="6" height="21" rx="2"/>
+      <rect id="as2" filter="url(#blackKeyShadow)" x="90" y="0" width="6" height="21" rx="2"/>
+    </g>
+  </g>
+  <rect id="front" stroke="#5B3D27" fill="#4F311A" filter="url(#genericShadow)" x="0" y="107" width="150" height="5"/>
+  <rect id="controlPanel" fill="#3B3C3B" x="4" y="5" width="142" height="46"/>
+  <rect id="divider1" fill="#D8D8D8" x="30" y="10" width="1" height="41"/>
+  <rect id="divider2" fill="#D8D8D8" x="67" y="10" width="1" height="41"/>
+  <rect id="divider3" fill="#D8D8D8" x="105" y="10" width="1" height="41"/>
+  <rect id="divider4" fill="#D8D8D8" x="134" y="10" width="1" height="41"/>
+  <rect id="top" fill="#8A5630" filter="url(#doubleShadow)" x="5" y="3" width="140" height="7"/>
+  <rect id="cover" fill="url(#coverGradient)" filter="url(#doubleShadow)" x="4" y="51" width="142" height="28"/>
+  <rect id="leftSide" fill="url(#sideGradient)" filter="url(#rightShadow)" x="1" y="1" width="4" height="105"/>
+  <rect id="rightSide" fill="url(#sideGradient)" filter="url(#leftShadow)" x="145" y="1" width="4" height="105"/>
+  <g id="logoGroup" transform="translate(118.000000, 60.000000)">
+    <rect id="logoPanel" fill="#2F2F2F" x="0" y="0" width="22" height="11"/>
+    <path d="M9.29051676,2.51411382 C9.29062195,2.51432418 9.29072713,2.51453455 9.29093749,2.51474491 L9.29051676,2.51411382 L9.29051676,2.51411382 Z M16.2579149,2.50643549 C16.3338568,2.39410051 16.4225257,2.28691948 16.5238165,2.18478721 C16.9280331,1.77678405 17.4072448,1.57272987 17.9602947,1.57272987 C18.5242836,1.57272987 19.0036006,1.76069111 19.4021373,2.12325541 L19.4021373,1.57272987 L20.0660497,1.57272987 L20.0660497,6.38819799 C20.1133818,7.22008689 19.7926802,7.78134104 18.7091946,7.71391902 L15.9774982,7.71391902 L15.9774982,7.05000668 L18.696783,7.05000668 C19.0806994,7.06462706 19.4149696,7.00078124 19.4026632,6.38809281 L19.4037151,5.15840346 C19.0149603,5.53432594 18.5464772,5.722182 18.0005797,5.722182 C17.4175527,5.722182 16.9251931,5.51991593 16.5219232,5.11538379 C16.4148473,5.00799239 16.3218659,4.89481596 16.2455034,4.77543375 C16.172086,4.88955683 16.0835223,4.99884151 15.9823366,5.10276188 C15.5806444,5.5152879 15.0932284,5.722182 14.5205094,5.722182 C13.9373772,5.722182 13.4450177,5.52002111 13.0418529,5.11538379 C12.9350926,5.00830794 12.8424267,4.89555223 12.7638554,4.77669594 C12.6882291,4.89050347 12.5998758,4.99926224 12.499216,5.10276188 C12.097629,5.5152879 11.6101078,5.722182 11.0373888,5.722182 C10.4816041,5.722182 10.0083878,5.53842806 9.61489979,5.17617931 L9.6130065,5.72165609 L8.94909416,5.72165609 L8.95361701,3.64387973 C8.95582585,3.23314182 8.81982479,2.89582134 8.54687604,2.63191829 C8.27487393,2.36812042 7.9288233,2.23653703 7.50967078,2.23653703 C7.13259129,2.23653703 6.809786,2.37211735 6.539572,2.643278 C6.26925281,2.91433347 6.13409322,3.24997103 6.1359865,3.64598338 L6.13777461,5.73112252 L5.47386227,5.73112252 L5.47501927,3.64756112 C5.47617628,3.23314182 5.34017523,2.89582134 5.06733166,2.63191829 C4.79532955,2.36812042 4.44927891,2.23653703 4.03002122,2.23653703 C3.65294173,2.23653703 3.33024162,2.37222254 3.05992243,2.643278 C2.69441303,3.05033452 2.6734817,3.31160801 2.65454883,3.62831271 L2.64918452,5.73112252 L1.99063649,5.73112252 L1.99063649,1.57272987 L2.65454883,1.57272987 L2.65486438,2.1238865 C3.04730053,1.75806155 3.50726388,1.57272987 4.03443888,1.57272987 C4.61651919,1.57272987 5.1135068,1.77310266 5.52424471,2.1739534 C5.63342421,2.28039816 5.72798334,2.39231241 5.81181384,2.50548884 C5.8880712,2.39662489 5.98263032,2.28060852 6.077505,2.18478721 C6.48182677,1.77678405 6.96093335,1.57272987 7.51408845,1.57272987 C8.09606357,1.57272987 8.59305118,1.77310266 9.00389428,2.1739534 C9.1141256,2.28144998 9.20952619,2.39462642 9.29009603,2.51348272 C9.36708967,2.398413 9.45733631,2.28902313 9.56062559,2.18478721 C9.96494736,1.77678405 10.4440539,1.57272987 10.997209,1.57272987 C11.0804084,1.57041586 11.1571917,1.58114448 11.2309247,1.5978685 L11.2294521,2.27072136 C11.1552984,2.24989522 11.0763063,2.2385355 10.9927914,2.23653703 C10.6157119,2.23653703 10.2929066,2.37211735 10.0226926,2.643278 C9.7523734,2.91433347 9.6172138,3.24997103 9.6172138,3.64861294 C9.6172138,4.04799114 9.75321486,4.38289242 10.0243755,4.65321161 C10.295431,4.92363598 10.6329618,5.05826966 11.0366525,5.05826966 C11.4335063,5.05826966 11.7666195,4.92363598 12.0351506,4.65321161 C12.3046283,4.38289242 12.4389464,4.0464134 12.4389464,3.64293309 C12.4389464,3.23314182 12.3028402,2.89582134 12.0301018,2.63191829 C11.9157684,2.52116105 11.7884975,2.43364915 11.6479736,2.37253808 L11.647658,3.77125581 L10.4294336,4.49364966 L10.4294336,4.00570775 L11.494407,3.38544617 L11.494407,3.06148388 L10.4294336,3.68816159 L10.4294336,3.05738176 L11.4900945,2.46930604 L11.494407,2.36065245 L11.4977729,1.62910773 C11.8687518,1.71051903 12.199025,1.89301078 12.4870149,2.1739534 C12.5981928,2.28239663 12.6944349,2.39662489 12.7753203,2.51348272 C12.851788,2.39651971 12.9412984,2.28818167 13.043641,2.18478721 C13.4480679,1.77678405 13.9271745,1.57272987 14.4803296,1.57272987 C15.0623047,1.57272987 15.5592924,1.77310266 15.9701355,2.1739534 C16.0824704,2.28355364 16.1793436,2.39893891 16.2609652,2.52010922 L16.2579149,2.50643549 L16.2579149,2.50643549 Z M13.1003344,3.64861294 C13.1003344,4.04799114 13.2363354,4.38289242 13.5074961,4.65321161 C13.7785516,4.92363598 14.1159772,5.05826966 14.5197731,5.05826966 C14.9166269,5.05826966 15.2496349,4.92363598 15.5182712,4.65321161 C15.7877489,4.38289242 15.922067,4.0464134 15.922067,3.64293309 C15.922067,3.23314182 15.786066,2.89582134 15.5131172,2.63191829 C15.2411151,2.36812042 14.8950645,2.23653703 14.4758068,2.23653703 C14.0987273,2.23653703 13.7761324,2.37211735 13.5058132,2.643278 C13.235494,2.91433347 13.1003344,3.24997103 13.1003344,3.64861294 L13.1003344,3.64861294 Z M16.5804047,3.64861294 C16.5804047,4.04799114 16.7164057,4.38289242 16.9875664,4.65321161 C17.258727,4.92363598 17.5961527,5.05826966 17.9998434,5.05826966 C18.3966972,5.05826966 18.7298104,4.92363598 18.9983415,4.65321161 C19.2678192,4.38289242 19.4021373,4.0464134 19.4021373,3.64293309 C19.4021373,3.23314182 19.2660311,2.89582134 18.9931875,2.63191829 C18.7211854,2.36812042 18.3751348,2.23653703 17.9559823,2.23653703 C17.5787976,2.23653703 17.2560975,2.37211735 16.9858835,2.643278 C16.7155643,2.91433347 16.5804047,3.24997103 16.5804047,3.64861294 L16.5804047,3.64861294 Z" id="logo" fill="#FFFFFF"/>
+    <path d="M19.9743305,8.91636862 L19.8464285,8.91636862 L19.8464285,8.41233377 L19.6613072,8.41233377 L19.6613072,8.30410091 L20.1593466,8.30410091 L20.1593466,8.41233377 L19.9743305,8.41233377 L19.9743305,8.91636862 L19.9743305,8.91636862 Z M20.8228382,8.91636862 L20.703456,8.91636862 L20.703456,8.40476063 L20.5874396,8.91636862 L20.4621672,8.91636862 L20.3503581,8.40476063 L20.3486752,8.91636862 L20.229293,8.91636862 L20.229293,8.30410091 L20.4160972,8.30410091 L20.5266441,8.7867837 L20.6378221,8.30410091 L20.8228382,8.30410091 L20.8228382,8.91636862 L20.8228382,8.91636862 Z" id="logoTM" fill="#FFFFFF"/>
+  </g>
+  <rect id="pitchWheel" fill="url(#wheelGradient)" x="12" y="91" width="2" height="10"/>
+  <rect id="modWheel" fill="url(#wheelGradient)" x="20" y="91" width="2" height="10"/>
+  <circle id="light" fill="#E66262" cx="139.5" cy="34.5" r="1.5"/>
+  <circle id="pot1" stroke="#282828" fill="#D8D8D8" cx="18" cy="28" r="2"/>
+  <circle id="pot2" stroke="#282828" fill="#D8D8D8" cx="14" cy="35" r="2"/>
+  <circle id="plug1" stroke="#A5A5A5" fill="#000000" cx="9.5" cy="82.5" r="1.5"/>
+  <circle id="screw1" fill="#2F2F2F" cx="11" cy="8" r="1"/>
+  <circle id="screw2" fill="#2F2F2F" cx="56" cy="8" r="1"/>
+  <circle id="screw3" fill="#2F2F2F" cx="94" cy="8" r="1"/>
+  <circle id="screw4" fill="#2F2F2F" cx="139" cy="8" r="1"/>
+  <circle id="plug2" stroke="#A5A5A5" fill="#000000" cx="9.5" cy="87.5" r="1.5"/>
+  <circle id="pot3" stroke="#282828" fill="#D8D8D8" cx="22" cy="35" r="2"/>
+  <circle id="pot4" stroke="#282828" fill="#D8D8D8" cx="41" cy="19" r="2"/>
+  <circle id="pot5" stroke="#282828" fill="#D8D8D8" cx="41" cy="31" r="2"/>
+  <circle id="pot6" stroke="#282828" fill="#D8D8D8" cx="41" cy="43" r="2"/>
+  <circle id="largePot1" stroke="#282828" fill="#D8D8D8" cx="50" cy="30" r="3"/>
+  <circle id="largePot2" stroke="#282828" fill="#D8D8D8" cx="50" cy="42" r="3"/>
+  <circle id="pot7" stroke="#282828" fill="#D8D8D8" cx="59" cy="19" r="2"/>
+  <circle id="pot8" stroke="#282828" fill="#D8D8D8" cx="59" cy="31" r="2"/>
+  <circle id="pot9" stroke="#282828" fill="#D8D8D8" cx="59" cy="43" r="2"/>
+  <circle id="pot10" stroke="#282828" fill="#D8D8D8" cx="76" cy="19" r="2"/>
+  <circle id="pot11" stroke="#282828" fill="#D8D8D8" cx="76" cy="31" r="2"/>
+  <circle id="pot12" stroke="#282828" fill="#D8D8D8" cx="76" cy="43" r="2"/>
+  <circle id="pot13" stroke="#282828" fill="#D8D8D8" cx="112" cy="19" r="2"/>
+  <circle id="pot14" stroke="#282828" fill="#D8D8D8" cx="112" cy="27" r="2"/>
+  <circle id="pot15" stroke="#282828" fill="#D8D8D8" cx="112" cy="41" r="2"/>
+  <circle id="pot16" stroke="#282828" fill="#D8D8D8" cx="121" cy="19" r="2"/>
+  <circle id="pot17" stroke="#282828" fill="#D8D8D8" cx="121" cy="27" r="2"/>
+  <circle id="pot18" stroke="#282828" fill="#D8D8D8" cx="121" cy="41" r="2"/>
+  <circle id="pot19" stroke="#282828" fill="#D8D8D8" cx="129" cy="19" r="2"/>
+  <circle id="pot20" stroke="#282828" fill="#D8D8D8" cx="129" cy="27" r="2"/>
+  <circle id="pot21" stroke="#282828" fill="#D8D8D8" cx="129" cy="41" r="2"/>
+  <circle id="pot22" stroke="#282828" fill="#D8D8D8" cx="91" cy="25" r="2"/>
+  <circle id="pot23" stroke="#282828" fill="#D8D8D8" cx="91" cy="37" r="2"/>
+  <rect id="redSwitch1" fill="#CD3325" x="28" y="22" width="5" height="2"/>
+  <rect id="blueSwitch1" fill="#487F9A" x="81" y="18" width="5" height="2"/>
+  <rect id="blueSwitch2" fill="#487F9A" x="81" y="24" width="5" height="2"/>
+  <rect id="blueSwitch3" fill="#487F9A" x="81" y="30" width="5" height="2"/>
+  <rect id="blueSwitch4" fill="#487F9A" x="81" y="36" width="5" height="2"/>
+  <rect id="blueSwitch5" fill="#487F9A" x="81" y="42" width="5" height="2"/>
+  <rect id="graySwitch1" fill="#7F7F7F" x="17" y="81" width="7" height="3"/>
+  <rect id="graySwitch2" fill="#7F7F7F" x="17" y="86" width="7" height="3"/>
+  <rect id="redSwitch2" fill="#CD3325" x="33" y="36" width="2" height="5"/>
+  <rect id="blueSwitch6" fill="#487F9A" x="97" y="33" width="2" height="5"/>
+  <rect id="powerSwitch" fill="#292929" x="138" y="38" width="3" height="7"/>
+  <rect id="divider5" fill="#D8D8D8" x="106" y="32" width="28" height="1"/>
+  <script type="text/ecmascript"><![CDATA[
+    var context;
+    if(window.AudioContext) {
+      context = new AudioContext();
+    } else {
+      context = new webkitAudioContext();
+    }
+    
+    var oscillator;
+    var amplifier;
+    
+    oscillator = context.createOscillator();
+    oscillator.frequency.value = 440;
+    amplifier = context.createGain();
+    amplifier.gain.value = 0;
+
+    oscillator.connect(amplifier);
+    amplifier.connect(context.destination);
+    oscillator.start(0);
+    
+    function playSound(frequency) {
+      var now = context.currentTime;
+      oscillator.frequency.setValueAtTime(frequency, now);
+      amplifier.gain.cancelScheduledValues(now);
+      amplifier.gain.setValueAtTime(amplifier.gain.value, now);
+      amplifier.gain.linearRampToValueAtTime(0.5, context.currentTime + 0.1);
+    }
+    
+    function stopSound() {
+      var now = context.currentTime;
+      amplifier.gain.cancelScheduledValues(now);
+      amplifier.gain.setValueAtTime(amplifier.gain.value, now);
+      amplifier.gain.linearRampToValueAtTime(0.0, context.currentTime + 0.5);
+    }
+    
+    
+    var keys = new Array(256);
+    
+    keys[65] = {
+      key: "f",
+      frequency: 174.61
+    };
+    keys[87] = {
+      key: "fs",
+      frequency: 185.00
+    };
+    keys[83] = {
+      key: "g",
+      frequency: 196.00
+    };
+    keys[69] = {
+      key: "gs",
+      frequency: 207.65
+    };
+    keys[68] = {
+      key: "a",
+      frequency: 220.00
+    };
+    keys[82] = {
+      key: "as",
+      frequency: 233.08
+    };
+    keys[70] = {
+      key: "b",
+      frequency: 246.94
+    };
+    keys[71] = {
+      key: "c",
+      frequency: 261.63
+    };
+    keys[89] = {
+      key: "cs",
+      frequency: 277.18
+    };
+    keys[72] = {
+      key: "d",
+      frequency: 293.66
+    };
+    keys[85] = {
+      key: "ds",
+      frequency: 311.13
+    };
+    keys[74] = {
+      key: "e",
+      frequency: 329.63
+    };
+    keys[75] = {
+      key: "f2",
+      frequency: 349.23
+    };
+    keys[79] = {
+      key: "fs2",
+      frequency: 369.99
+    };
+    keys[76] = {
+      key: "g2",
+      frequency: 392.00
+    };
+    keys[80] = {
+      key: "gs2",
+      frequency: 415.30
+    };
+    keys[186] = {
+      key: "a2",
+      frequency: 440.00
+    };
+    keys[219] = {
+      key: "as2",
+      frequency: 466.16
+    };
+    keys[222] = {
+      key: "b2",
+      frequency: 493.88
+    };
+    keys[220] = {
+      key: "c2",
+      frequency: 523.25
+    };
+    
+    // Key event handlers
+    
+    function keyDownHandler(e) {
+      e.preventDefault();
+      key = keys[e.keyCode];
+      var el;
+      if (key) {
+        el = document.getElementById(key.key);
+        if (key.key[1] === "s") {
+          el.style.fill = "#2B2B2B";
+          el.removeAttribute("filter");
+          el.setAttribute("transform", "translate(0.000000, 1.000000)");
+        } else {
+          el.style.fill = "#cfcfcf";
+          el.removeAttribute("filter");
+          el.setAttribute("transform", "translate(0.000000, 1.000000)");
+        }
+        playSound(key.frequency);
+      }
+    }
+    
+    function keyUpHandler(e) {
+      e.preventDefault();
+      key = keys[e.keyCode];
+      var el;
+      if (key) {
+        el = document.getElementById(key.key);
+        if (key.key[1] === "s") {
+          el.style.fill = "#565656";
+          el.setAttribute("filter", "url(#blackKeyShadow)");
+          el.setAttribute("transform", "translate(0.000000, 0.000000)");
+        } else {
+          el.style.fill = "#FAFAFA";
+          el.setAttribute("filter", "url(#whiteKeyShadow)");
+          el.setAttribute("transform", "translate(0.000000, 0.000000)");
+        }
+        stopSound();
+      }
+    }
+    
+    document.addEventListener('keydown', keyDownHandler);
+    document.addEventListener('keyup', keyUpHandler);
+    
+    document.getElementById("miniMoog").addEventListener('focusin', function (){
+      var light = document.getElementById("light");
+      light.style.fill = "#CD3325";
+    });
+    document.getElementById("miniMoog").addEventListener('focusout', function (){
+      var light = document.getElementById("light");
+      light.style.fill = "#E66262";
+    });
+  ]]></script>
+</svg>
